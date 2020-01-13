@@ -1,12 +1,7 @@
 #!/bin/zsh
 set -e
 
-# Symlink dot/* into home directory as hidden files
-
-# Symlink files/* into home directory as regular files
-#for f in $(ls -d ~/.dotfiles/files/*); do ln -sfn $f ~/$(basename $f); done
-
-#setup Prezto
+# Set up Prezto
 mkdir -p ~/.zprezto
 cd ~/.zprezto
 if [ -d .git ]; then
@@ -21,5 +16,10 @@ for rcfile in ~/.zprezto/runcoms/^README.md(.N); do
 done
 #shell expansion "~" can't be in quotes, we use "" for security
 
+# Symlink dot/* into home directory as hidden files
 for f in $(ls -d ~/.dotfiles/dot/*); do ln -sfn $f ~/.$(basename $f); done
+
+# Symlink files/* into home directory as regular files
+for f in $(ls -d ~/.dotfiles/files/*); do ln -sfn $f ~/$(basename $f); done
+
 echo "such successfulness"

@@ -1,20 +1,15 @@
 [user]
-	name = Frida Casas
-	email = fridacasas.fc@gmail.com
+	name = A.D.Faris
+	email = adfaris@gmail.com
 [github]
-	user = fridaland
+	user = adfaris
 [push]
 	default = simple
 [credential]
 	helper = osxkeychain
 [alias]
 	co = checkout
-	gp = git push
-	gc = git commit -m
-	ga = git add
-	gs = git status
-
 [core]
-	editor = "atom -w"
+	editor = "code --wait"
 [rerere]
 	enabled = true
