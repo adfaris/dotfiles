@@ -13,3 +13,5 @@
 	editor = "code --wait"
 [rerere]
 	enabled = true
+[color]
+	ui = auto
