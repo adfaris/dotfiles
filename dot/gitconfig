@@ -9,6 +9,8 @@
 	helper = osxkeychain
 [alias]
 	co = checkout
+	branch-name = rev-parse --abbrev-ref HEAD
+	pub = !git push -u origin $(git branch-name)
 [core]
 	editor = "code --wait"
 [rerere]
